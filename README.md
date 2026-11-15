@@ -1,6 +1,6 @@
 # ExplainCheck v2 — human-centred recommendation and feedback prototype
 
-README prose word count: **644** (includes headings; excludes code blocks and commands).
+README prose word count: **approximately 620** (includes headings; excludes code blocks and commands).
 
 ## Status and scope
 
@@ -36,7 +36,8 @@ Requires Node.js 18+ (22 recommended). **Eight** unit tests cover prediction, va
 
 See the [decision-by-decision development record](docs/DEVELOPMENT_EVIDENCE.md), the [technical notes](docs/TECHNICAL_NOTES.md) and the [operation guide](docs/RUN_AND_SUBMIT.md). The main change from v1 was correcting three mismatches between the design goal and the UI: no default AI-selected answer, no confidence-like 55–92 number, and no rating of an explanation that was never opened. The new interface instead requires explicit choice, displays all raw scores, and records `explanationViewedBeforeDecision` in the local record and CSV.
 
-The author previously inspected the v1 EC-03 interaction in a browser and shared screenshots of the decision, feedback and summary. Version 2's eight unit tests and a scripted Chromium inspection passed **in the assistant's preparation environment**, not yet on the author's computer. Author-specific test results should be added to the development record only after they are actually observed.
+The author previously inspected the v1 EC-03 interaction in a browser and shared screenshots of the decision, feedback and summary. 
+Version 2 passed eight automated unit tests and a scripted Chromium inspection during AI-assisted preparation. The student subsequently ran all eight unit tests on Windows and independently inspected EC-02, EC-03, feedback storage, session summaries and CSV export in a local browser. The results are recorded in docs/TEST_RECORD.md and docs/DEVELOPMENT_EVIDENCE.md.
 
 ## AI assistance, originality and checks
 
