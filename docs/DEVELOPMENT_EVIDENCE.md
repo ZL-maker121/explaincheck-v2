@@ -27,3 +27,15 @@ This document describes **actual design changes** between the first standalone E
 - [√] Export CSV and verify `explanation_viewed_before_decision` and raw-point columns.
 - [√] Ensure README, project files and report refer to the final repository URL and selected commit.
 
+
+## Independent author verification — 2026-11-15
+
+I independently ran ExplainCheck v2 on Windows and executed the eight automated unit tests. All eight passed.
+
+I then inspected the prototype in a local browser. In EC-02, I selected Billing without viewing the explanation. The system correctly indicated that my decision differed from the reference answer and recorded the explanation as Not viewed.
+
+In EC-03, I reviewed the explanation and selected Billing instead of the suggested Account category. The system correctly identified the simulated AI error and saved my feedback.
+
+I checked the session summary and exported the records as CSV. I verified that the two cases had different explanation-view flags and that the saved decisions matched the browser results.
+
+These checks were performed separately from the earlier ChatGPT-assisted development and testing. They confirm the observed functions but do not constitute a participant study.
